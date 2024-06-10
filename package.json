@@ -1,5 +1,5 @@
 {
-  "name": "saas-starter-template",
+  "name": "repo",
   "private": true,
   "scripts": {
     "build": "turbo build",

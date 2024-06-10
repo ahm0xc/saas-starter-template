@@ -3,9 +3,9 @@
 
 import { sql } from "drizzle-orm";
 import {
-  index,
   pgTableCreator,
   serial,
+  text,
   timestamp,
   varchar,
 } from "drizzle-orm/pg-core";
@@ -16,19 +16,23 @@ import {
  *
  * @see https://orm.drizzle.team/docs/goodies#multi-project-schema
  */
-export const createTable = pgTableCreator((name) => `saas_starter_template_${name}`);
-
-export const posts = createTable(
-  "post",
-  {
-    id: serial("id").primaryKey(),
-    name: varchar("name", { length: 256 }),
-    createdAt: timestamp("created_at", { withTimezone: true })
-      .default(sql`CURRENT_TIMESTAMP`)
-      .notNull(),
-    updatedAt: timestamp("updatedAt", { withTimezone: true }),
-  },
-  (example) => ({
-    nameIndex: index("name_idx").on(example.name),
-  })
+export const createTable = pgTableCreator(
+  (name) => `saas_starter_template_${name}`,
 );
+
+export const posts = createTable("post", {
+  id: serial("id").primaryKey(),
+  name: varchar("name", { length: 256 }),
+  createdAt: timestamp("created_at", { withTimezone: true })
+    .default(sql`CURRENT_TIMESTAMP`)
+    .notNull(),
+  updatedAt: timestamp("updatedAt", { withTimezone: true }),
+});
+
+export const users = createTable("user", {
+  id: varchar("id").primaryKey(),
+  email: varchar("email", { length: 255 }).notNull(),
+  username: varchar("username", { length: 255 }),
+  image: text("image").notNull(),
+  createdAt: timestamp("created_at", { withTimezone: true }).defaultNow(),
+});

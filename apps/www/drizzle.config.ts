@@ -8,5 +8,5 @@ export default {
   dbCredentials: {
     url: env.DATABASE_URL,
   },
-  tablesFilter: ["www_*"],
+  tablesFilter: ["saas_starter_template_*"],
 } satisfies Config;

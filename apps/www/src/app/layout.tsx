@@ -3,6 +3,7 @@ import { ClerkProvider } from "@clerk/nextjs";
 
 import { TRPCReactProvider } from "~/trpc/react";
 import "~/styles/globals.css";
+import ThemeProvider from "~/components/providers/theme-provider";
 
 export const metadata = {
   title: "Saas Starter template",
@@ -19,7 +20,9 @@ export default function RootLayout({
     <ClerkProvider>
       <html lang="en" className={`${GeistSans.variable}`}>
         <body>
-          <TRPCReactProvider>{children}</TRPCReactProvider>
+          <ThemeProvider>
+            <TRPCReactProvider>{children}</TRPCReactProvider>
+          </ThemeProvider>
         </body>
       </html>
     </ClerkProvider>

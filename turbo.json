@@ -11,6 +11,14 @@
       "outputs": [
         ".next/**",
         "!.next/cache/**"
+      ],
+      "env": [
+        "DATABASE_URL",
+        "NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY",
+        "CLERK_SECRET_KEY",
+        "WEBHOOK_SECRET",
+        "NEXT_PUBLIC_CLERK_SIGN_IN_URL",
+        "NEXT_PUBLIC_CLERK_SIGN_UP_URL"
       ]
     },
     "lint": {

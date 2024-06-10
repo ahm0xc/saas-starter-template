@@ -8,3 +8,4 @@
 ## Resources
 
 - https://tablericons.com/
+- https://hugeicons.com/icon

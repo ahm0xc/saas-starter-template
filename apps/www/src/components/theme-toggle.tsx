@@ -2,13 +2,7 @@
 
 import * as React from "react";
 import { MoonIcon, SunIcon } from "@iconicicons/react";
-import {
-  Button,
-  Switch,
-  Toggle,
-  ToggleGroup,
-  Tooltip,
-} from "@lemonsqueezy/wedges";
+import { Button, Tooltip } from "@lemonsqueezy/wedges";
 import { useTheme } from "next-themes";
 
 export default function ThemeToggle() {

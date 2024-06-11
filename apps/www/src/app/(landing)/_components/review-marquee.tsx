@@ -78,6 +78,9 @@ function Review({ image }: { image: StaticImageData }) {
   return (
     <Image
       src={image}
+      placeholder="blur"
+      width={500}
+      height={300}
       className="border-surface-100 mx-4 h-auto w-fit rounded-lg border"
       alt=""
     />

@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 import Logo from "~/components/logo";
 import NavLinks from "./nav-links";
@@ -16,9 +17,10 @@ export default function Navbar({ className }: Props) {
         className="mx-auto flex w-full max-w-6xl items-center"
       >
         <div aria-label="nav-left">
-          <div aria-label="logo-wrapper">
+          <Link href="/" aria-label="logo-wrapper" className="flex items-center gap-2">
             <Logo className="h-6 w-6" />
-          </div>
+            <p className="text-2xl font-semibold font-poppins">Wedges</p>
+          </Link>
         </div>
         <div aria-label="nav-center" className="mx-auto">
           <div className="hidden md:block">

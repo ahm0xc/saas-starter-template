@@ -1,6 +1,7 @@
 import Community from "./_components/community";
 import ExtendedFeatures from "./_components/extended-features";
 import Features from "./_components/features";
+import FooterCTA from "./_components/footer-cta";
 import Hero from "./_components/hero";
 
 export default async function Home() {
@@ -15,8 +16,11 @@ export default async function Home() {
       <div>
         <ExtendedFeatures />
       </div>
-      <div>
+      <div className="mb-32 px-4">
         <Community />
+      </div>
+      <div>
+        <FooterCTA />
       </div>
     </div>
   );

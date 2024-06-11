@@ -2,9 +2,12 @@ import React from "react";
 import { ArrowRightIcon } from "@iconicicons/react";
 import { Button } from "@lemonsqueezy/wedges";
 
+import ReviewMarquee from "./review-marquee";
+
 export default function Hero() {
   return (
-    <div className="bg-primary pb-20">
+    <div className="bg-primary">
+      {/* hero */}
       <div className="mx-auto w-fit pt-32">
         <h1 className="animate-wg-fade-in-up fill-mode-forwards text-center text-7xl font-semibold leading-[80px] text-white opacity-0 duration-1000">
           Build faster with Template. <br /> An open-source collection <br /> of
@@ -23,6 +26,10 @@ export default function Hero() {
             Start building with Wedges
           </Button>
         </div>
+      </div>
+      {/* reviews */}
+      <div className="pt-36 pb-28">
+        <ReviewMarquee />
       </div>
     </div>
   );

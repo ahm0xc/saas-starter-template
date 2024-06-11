@@ -10,7 +10,7 @@ type Props = {
 
 export default function Navbar({ className }: Props) {
   return (
-    <header className="bg-primary text-wg-white flex h-20 w-full items-center text-[15px]">
+    <header className="bg-primary text-wg-white flex h-20 w-full items-center px-4 text-[15px]">
       <div
         aria-label="inner-nav-wrapper"
         className="mx-auto flex w-full max-w-6xl items-center"
@@ -21,7 +21,9 @@ export default function Navbar({ className }: Props) {
           </div>
         </div>
         <div aria-label="nav-center" className="mx-auto">
-          <NavLinks />
+          <div className="hidden md:block">
+            <NavLinks />
+          </div>
         </div>
         <div aria-label="nav-right">
           <NavActionButtons />

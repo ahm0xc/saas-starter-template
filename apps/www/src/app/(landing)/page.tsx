@@ -1,3 +1,4 @@
+import Community from "./_components/community";
 import ExtendedFeatures from "./_components/extended-features";
 import Features from "./_components/features";
 import Hero from "./_components/hero";
@@ -13,6 +14,9 @@ export default async function Home() {
       </div>
       <div>
         <ExtendedFeatures />
+      </div>
+      <div>
+        <Community />
       </div>
     </div>
   );

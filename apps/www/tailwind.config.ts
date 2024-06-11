@@ -16,6 +16,7 @@ export default {
     },
   },
   plugins: [
+    require("tailwindcss-animate"),
     wedgesTW({
       prefix: "wg", // prefix used for CSS variables
       defaultTheme: "light", // default theme

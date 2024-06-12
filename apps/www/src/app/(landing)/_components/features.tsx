@@ -32,7 +32,7 @@ export default function Features() {
     <section className="mx-auto max-w-6xl">
       <div className="my-40">
         <div>
-          <p className="text-primary font-medium uppercase tracking-wider">
+          <p className="font-medium uppercase tracking-wider text-primary">
             meet saas
           </p>
           <div className="grid grid-cols-2 gap-36">
@@ -41,7 +41,7 @@ export default function Features() {
                 Simplify the process of building beautiful user interfaces
               </h3>
             </div>
-            <div className="text-secondary-600 [&_strong]:text-secondary mt-5 space-y-10 text-lg [&_strong]:ml-1">
+            <div className="mt-5 space-y-10 text-lg text-secondary-600 [&_strong]:ml-1 [&_strong]:text-secondary">
               <p>
                 Wedges is a professionally designed design system for Figma and
                 <strong>an open-source SaaS template</strong> that combines
@@ -61,7 +61,10 @@ export default function Features() {
       <div className="mb-20">
         <div className="grid grid-cols-3 gap-6">
           {features.map((feat, idx) => (
-            <div key={`feat-${feat.heading}-${idx}`} className="space-y-4 p-6 rounded-xl hover:bg-secondary-50 duration-200">
+            <div
+              key={`feat-${feat.heading}-${idx}`}
+              className="space-y-4 rounded-xl p-6 duration-200 hover:bg-secondary-50"
+            >
               <p className="text-primary">F/{idx + 1}</p>
               <h4 className="text-3xl font-semibold">{feat.heading}</h4>
               <p className="text-lg text-secondary-700">{feat.body}</p>

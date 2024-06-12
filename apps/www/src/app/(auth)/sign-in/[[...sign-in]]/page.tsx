@@ -10,7 +10,7 @@ export default function SignInPage() {
   const { resolvedTheme } = useTheme();
   const { isMounted } = useIsMounted();
 
-  if (!isMounted) return null;;
+  if (!isMounted) return null;
 
   return (
     <div className="grid h-screen w-full grid-cols-1 lg:grid-cols-2">

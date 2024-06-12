@@ -11,7 +11,7 @@ export default function Footer() {
           <Link href="/">
             <Logo className="h-7 w-7" />
           </Link>
-          <p className="text-secondary-200 text-sm">
+          <p className="text-sm text-secondary-200">
             © 2024 Ahmed, LLC • <Link href="/">Privacy</Link> •{" "}
             <Link href="/">Terms</Link>
           </p>

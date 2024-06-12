@@ -37,7 +37,8 @@ export default function Logo({ className }: Props) {
           gradientUnits="userSpaceOnUse"
         >
           {" "}
-          <stop stopColor="rgba(255,255,255,1)" /> <stop offset="1" stopColor="rgba(200,200,200)" />{" "}
+          <stop stopColor="rgba(255,255,255,1)" />{" "}
+          <stop offset="1" stopColor="rgba(200,200,200)" />{" "}
         </linearGradient>{" "}
         <clipPath id="clip0_234_869">
           {" "}

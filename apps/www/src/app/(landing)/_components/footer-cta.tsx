@@ -15,7 +15,13 @@ export default function FooterCTA() {
           </h3>
         </div>
         <div className="flex items-end justify-end">
-          <Button variant="tertiary" className="text-lg h-12 px-8 rounded-full" after={<ArrowRightIcon />}>Get Started</Button>
+          <Button
+            variant="tertiary"
+            className="h-12 rounded-full px-8 text-lg"
+            after={<ArrowRightIcon />}
+          >
+            Get Started
+          </Button>
         </div>
       </div>
     </div>

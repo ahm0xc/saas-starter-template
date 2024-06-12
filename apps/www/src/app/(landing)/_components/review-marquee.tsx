@@ -59,7 +59,7 @@ export default function ReviewMarquee() {
                 <div className="flex items-center gap-0.5">
                   {Array.from({ length: review.star }).map(() => (
                     <StarIcon
-                      className="fill-wg-yellow text-wg-yellow h-6 w-6"
+                      className="h-6 w-6 fill-wg-yellow text-wg-yellow"
                       key={`review-star-${review.review}-${idx}`}
                     />
                   ))}
@@ -81,7 +81,7 @@ function Review({ image }: { image: StaticImageData }) {
       placeholder="blur"
       width={500}
       height={300}
-      className="border-surface-100 mx-4 h-auto w-fit rounded-lg border"
+      className="mx-4 h-auto w-fit rounded-lg border border-surface-100"
       alt=""
     />
   );

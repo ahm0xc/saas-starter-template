@@ -11,7 +11,7 @@ export default function ThemeProvider({ children }: React.PropsWithChildren) {
   const forcedTheme = forcedLightThemePaths.includes(pathname)
     ? "light"
     : undefined;
-    
+
   return (
     <TP
       attribute="class"

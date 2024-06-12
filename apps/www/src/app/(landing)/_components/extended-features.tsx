@@ -15,7 +15,7 @@ export default function ExtendedFeatures() {
               <h3 className="mt-4 text-6xl font-semibold text-green-900">
                 Meticulously designed in Figma by professionals
               </h3>
-              <p className="text-secondary-600 mt-6 text-xl font-medium leading-relaxed [&_strong]:text-green-900">
+              <p className="mt-6 text-xl font-medium leading-relaxed text-secondary-600 [&_strong]:text-green-900">
                 Wedges has been designed by seasoned experts. The result is a
                 beautiful collection of modern,{" "}
                 <strong>
@@ -24,12 +24,12 @@ export default function ExtendedFeatures() {
               </p>
             </div>
           </div>
-          <div className="bg-wg-green relative grid h-[90vh] place-content-center overflow-hidden">
+          <div className="relative grid h-[90vh] place-content-center overflow-hidden bg-wg-green">
             <RadixUILogo className="h-52 w-52 text-white" />
           </div>
         </section>
         <section className="grid grid-cols-2">
-          <div className="bg-wg-blue relative grid h-[90vh] place-content-center overflow-hidden">
+          <div className="relative grid h-[90vh] place-content-center overflow-hidden bg-wg-blue">
             <TailwindCSSLogo className="h-72 w-72 text-white" />
           </div>
           <div className="grid h-[90vh] place-content-center bg-blue-100">
@@ -38,7 +38,7 @@ export default function ExtendedFeatures() {
               <h3 className="mt-4 text-6xl font-semibold text-blue-900">
                 Apply custom styling with Tailwind CSS
               </h3>
-              <p className="text-secondary-600 mt-6 text-xl font-medium leading-relaxed [&_strong]:text-blue-900">
+              <p className="mt-6 text-xl font-medium leading-relaxed text-secondary-600 [&_strong]:text-blue-900">
                 Wedges is built with Tailwind CSS and includes a custom plugin
                 that allows you to{" "}
                 <strong>create, switch, and customize themes quickly</strong>{" "}
@@ -54,14 +54,14 @@ export default function ExtendedFeatures() {
               <h3 className="mt-4 text-6xl font-semibold text-orange-900">
                 Powerful & Secure Authentication system
               </h3>
-              <p className="text-secondary-600 mt-6 text-xl font-medium leading-relaxed [&_strong]:text-orange-900">
+              <p className="mt-6 text-xl font-medium leading-relaxed text-secondary-600 [&_strong]:text-orange-900">
                 The easiest way to add authentication and user management to
                 your application. Purpose-built for{" "}
                 <strong>React, Next.js, Remix, and “The Modern Web”.</strong>
               </p>
             </div>
           </div>
-          <div className="bg-wg-orange relative grid h-[90vh] place-content-center overflow-hidden">
+          <div className="relative grid h-[90vh] place-content-center overflow-hidden bg-wg-orange">
             <ClerkLogo className="h-52 w-52 text-white" />
           </div>
         </section>

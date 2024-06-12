@@ -1,17 +1,10 @@
 {
   "$schema": "https://turbo.build/schema.json",
-  "globalDependencies": [
-    "**/.env.*local"
-  ],
+  "globalDependencies": ["**/.env.*local"],
   "tasks": {
     "build": {
-      "dependsOn": [
-        "^build"
-      ],
-      "outputs": [
-        ".next/**",
-        "!.next/cache/**"
-      ],
+      "dependsOn": ["^build"],
+      "outputs": [".next/**", "!.next/cache/**"],
       "env": [
         "DATABASE_URL",
         "NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY",
@@ -22,13 +15,14 @@
       ]
     },
     "lint": {
-      "dependsOn": [
-        "^lint"
-      ]
+      "dependsOn": ["^lint"]
     },
     "dev": {
       "cache": false,
       "persistent": true
+    },
+    "format": {
+      "cache": true
     }
   }
 }

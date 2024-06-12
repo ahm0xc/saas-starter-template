@@ -58,7 +58,7 @@ export default function Community() {
     <section className="mx-auto max-w-6xl">
       <div className="my-40">
         <div>
-          <p className="text-primary font-medium uppercase tracking-wider">
+          <p className="font-medium uppercase tracking-wider text-primary">
             COMMUNITY
           </p>
           <div className="grid grid-cols-2 gap-36">
@@ -67,7 +67,7 @@ export default function Community() {
                 You’re in good company
               </h3>
             </div>
-            <div className="text-secondary-600 [&_strong]:text-secondary mt-5 space-y-10 text-lg">
+            <div className="mt-5 space-y-10 text-lg text-secondary-600 [&_strong]:text-secondary">
               <p>
                 SaaST is the heartbeat for your business.{" "}
                 <strong>Join thousands of successful startups,</strong> software

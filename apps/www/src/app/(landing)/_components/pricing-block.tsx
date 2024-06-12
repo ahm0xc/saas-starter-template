@@ -6,8 +6,8 @@ export default function PricingBlock() {
   return (
     <div>
       <div className="grid grid-cols-2">
-        <div className="bg-green-200 p-20 h-full">
-          <div className="flex flex-col h-full">
+        <div className="h-full bg-green-200 p-20">
+          <div className="flex h-full flex-col">
             <div>
               <p className="text-center text-[15px] font-semibold uppercase tracking-wider text-green-600">
                 personal
@@ -63,12 +63,18 @@ export default function PricingBlock() {
             </div>
             <div className="flex-1" />
             <div className="mt-10">
-                <Button variant="primary" before={<WalletIcon/>} className="w-full h-12 rounded-full text-lg font-semibold">Buy now</Button>
+              <Button
+                variant="primary"
+                before={<WalletIcon />}
+                className="h-12 w-full rounded-full text-lg font-semibold"
+              >
+                Buy now
+              </Button>
             </div>
           </div>
         </div>
-        <div className="bg-pink-200 p-20 h-full">
-          <div className="flex flex-col h-full">
+        <div className="h-full bg-pink-200 p-20">
+          <div className="flex h-full flex-col">
             <div>
               <p className="text-center text-[15px] font-semibold uppercase tracking-wider text-pink-600">
                 pro
@@ -140,7 +146,13 @@ export default function PricingBlock() {
             </div>
             <div className="flex-1" />
             <div className="mt-10">
-                <Button variant="primary" before={<WalletIcon/>} className="w-full h-12 rounded-full text-lg font-semibold">Buy now</Button>
+              <Button
+                variant="primary"
+                before={<WalletIcon />}
+                className="h-12 w-full rounded-full text-lg font-semibold"
+              >
+                Buy now
+              </Button>
             </div>
           </div>
         </div>

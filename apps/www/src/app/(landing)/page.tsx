@@ -3,6 +3,8 @@ import ExtendedFeatures from "./_components/extended-features";
 import Features from "./_components/features";
 import FooterCTA from "./_components/footer-cta";
 import Hero from "./_components/hero";
+import PricingBlock from "./_components/pricing-block";
+import PricingIntro from "./_components/pricing-intro";
 
 export default async function Home() {
   return (
@@ -15,6 +17,12 @@ export default async function Home() {
       </div>
       <div>
         <ExtendedFeatures />
+      </div>
+      <div>
+        <PricingIntro />
+        <div className="mt-20 scroll-mt-32" id="pricing">
+          <PricingBlock />
+        </div>
       </div>
       <div className="mb-32 px-4">
         <Community />

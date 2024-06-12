@@ -13,7 +13,7 @@ const links: LinkType[] = [
   },
   {
     label: "Pricing",
-    href: "/",
+    href: "#pricing",
   },
   {
     label: "Help",
